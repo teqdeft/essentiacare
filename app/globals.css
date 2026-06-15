@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Serif:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-body text-gray-800 bg-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-main {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold rounded-lg
+      hover:bg-primary-800 transition-all duration-300 text-sm;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-accent text-white font-semibold rounded-lg
+      hover:bg-accent-600 transition-all duration-300 text-sm;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg
+      hover:bg-primary hover:text-white transition-all duration-300 text-sm;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6d578e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a4775;
+}
+
+/* Announcement bar */
+.announcement-bar {
+  background: #60428b;
+}
+
+/* ===== Hide Google Translate UI completely ===== */
+
+/* Hide the top "Google Translate" banner that pushes content down */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+}
+
+/* Prevent body offset */
+body {
+  top: 0 !important;
+  position: static !important;
+}
+
+html {
+  margin-top: 0 !important;
+}
+
+/* Hide the entire Google widget — we use our custom dropdown */
+#google_translate_element,
+.goog-te-gadget,
+.goog-logo-link,
+.goog-te-gadget span,
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Remove the highlight tooltip when hovering translated text */
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Hide the "Powered by Google" footer that sometimes appears */
+.skiptranslate {
+  display: none !important;
+}
+
+/* Keep our custom dropdown visible (override the skiptranslate hide) */
+#google_translate_element.skiptranslate {
+  display: none !important;
+}
+
+/* Tame the text-selection highlight (Google Translate triggers it on click) */
+::selection {
+  background: rgba(255, 255, 255, 0.25);
+}
+::-moz-selection {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Google Translate (current version) wraps translated text in <font>
+   tags with VIpgJd-* classes — kill the highlight on click/hover */
+font[class*="VIpgJd"],
+font[class*="VIpgJd"]:hover,
+font[class*="VIpgJd"]:focus {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  text-decoration: none !important;
+}

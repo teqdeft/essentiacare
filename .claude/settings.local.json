@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"E:\\\\Teqdeft\\\\Iwilltill\" -Force -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -eq \".git\" } | Select-Object FullName; Write-Output \"---\"; Test-Path \"E:\\\\Teqdeft\\\\Iwilltill\\\\.git\")",
+      "PowerShell(git -C \"E:\\\\Teqdeft\\\\Iwilltill\" rev-parse --is-inside-work-tree 2>&1)",
+      "WebFetch(domain:essentiacare.ai)"
+    ]
+  }
+}
