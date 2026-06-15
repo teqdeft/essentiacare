@@ -111,17 +111,11 @@ export default function SilverPrescriptionPlanPage() {
               {/* Right - Text */}
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
-                  Prescription Plan UC-A <br />
-                  Urgent Care Medications
+                  Prescription Plan UC-A
                 </h2>
-                {/* <h3 className="text-xl md:text-xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-6">
-                  Acute Medication Subscription Program
-                </h3> */}
-
-                {/* <p className="text-gray-600 text-base leading-relaxed mb-4">
-                  Consider us your Pharmacy Savings Advocate.
-                </p> */}
-
+                <h3 className="text-xl md:text-xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-6">
+                  Urgent Care Medications
+                </h3>
                 <p className="text-gray-700 text-base leading-relaxed mb-4">
                   As a subscriber to{" "}
                   <span className="font-bold">EssentiaCare</span>,{" "}
@@ -267,7 +261,7 @@ export default function SilverPrescriptionPlanPage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

@@ -130,7 +130,7 @@ export default function CounsellingCareServicesPage() {
                   <ArrowRight className="w-4 h-4" />
                 </Button>
                 <Button
-                  variant="accent"
+                  variant="primary"
                   size="lg"
                   href="https://app.essentiacare.ai/register"
                 >
@@ -183,7 +183,7 @@ export default function CounsellingCareServicesPage() {
             </div>
 
             <div className="mt-10">
-              <Button variant="primary" size="lg" href="/pricing">
+              <Button variant="outline" size="lg" href="/pricing">
                 Choose a plan
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -347,7 +347,7 @@ export default function CounsellingCareServicesPage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

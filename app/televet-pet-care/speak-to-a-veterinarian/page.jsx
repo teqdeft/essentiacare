@@ -80,8 +80,8 @@ export default function SpeakToAVeterinarianPage() {
               </h1>
 
               <p className="text-lg md:text-xl text-white/95 font-semibold leading-relaxed max-w-2xl mx-auto">
-                EssentiaCare offers premiere services that are designed to
-                meet your pet health care needs. Communication with Licensed
+                EssentiaCare offers premiere services that are designed to meet
+                your pet health care needs. Communication with Licensed
                 Veterinarians in English and Spanish, 24/7, 365 days a year. The
                 highest quality care for your pets is offered at a flexible
                 affordable value.
@@ -201,7 +201,7 @@ export default function SpeakToAVeterinarianPage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

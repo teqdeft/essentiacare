@@ -5,7 +5,6 @@ import ContactForm from "@/components/sections/ContactForm";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
-
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
   return getPageSEO("contact-us");
@@ -51,13 +50,13 @@ export default function ContactUsPage() {
               </h1>
 
               <p className="text-lg md:text-xl text-white/95 font-medium leading-relaxed mb-8 max-w-2xl">
-                EssentiaCare offers premiere services that are designed to
-                meet your medical and mental health needs. Communication with a
-                host of specialists, including Licensed Physicians, Licensed
-                Mental Health Therapists, Licensed Veterinarians and Care
-                Coordinators in English and Spanish, 24/7, 365 days a year. The
-                highest quality care for your body, mind, and soul is offered at
-                a flexible affordable value.
+                EssentiaCare offers premiere services that are designed to meet
+                your medical and mental health needs. Communication with a host
+                of specialists, including Licensed Physicians, Licensed Mental
+                Health Therapists, Licensed Veterinarians and Care Coordinators
+                in English and Spanish, 24/7, 365 days a year. The highest
+                quality care for your body, mind, and soul is offered at a
+                flexible affordable value.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -70,7 +69,7 @@ export default function ContactUsPage() {
                   <ArrowRight className="w-4 h-4" />
                 </Button>
                 <Button
-                  variant="accent"
+                  variant="primary"
                   size="lg"
                   href="https://app.essentiacare.ai/register"
                 >
@@ -144,7 +143,7 @@ export default function ContactUsPage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

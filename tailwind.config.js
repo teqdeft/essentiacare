@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./app/**/*.{js,jsx}",
-    "./components/**/*.{js,jsx}",
-  ],
+  content: ["./app/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
@@ -45,16 +42,13 @@ module.exports = {
         },
       },
       fontFamily: {
-        heading: ['"Raleway"', "system-ui", "sans-serif"],
-        body: ['"Open Sans"', "system-ui", "sans-serif"],
+        heading: ['"DM Sans"', "system-ui", "sans-serif"],
+        body: ['"DM Sans"', "system-ui", "sans-serif"],
         script: ['"Dancing Script"', "cursive"],
-        serif: ['"IBM Plex Serif"', "Georgia", "serif"],
       },
       backgroundImage: {
-        "hero-gradient":
-          "linear-gradient(135deg, #604377 0%, #8638d7 100%)",
-        "cta-gradient":
-          "linear-gradient(135deg, #604377 0%, #914ed7 100%)",
+        "hero-gradient": "linear-gradient(135deg, #604377 0%, #8638d7 100%)",
+        "cta-gradient": "linear-gradient(135deg, #604377 0%, #914ed7 100%)",
       },
       animation: {
         "fade-in": "fadeIn 0.6s ease-out forwards",

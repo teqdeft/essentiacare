@@ -234,7 +234,7 @@ export default function SpeakToATherapistPage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

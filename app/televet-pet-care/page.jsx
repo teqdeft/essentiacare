@@ -60,7 +60,7 @@ export default function TeleVetPage() {
                   <ArrowRight className="w-4 h-4" />
                 </Button>
                 <Button
-                  variant="accent"
+                  variant="primary"
                   size="md"
                   href="https://app.essentiacare.ai/register"
                 >
@@ -131,7 +131,7 @@ export default function TeleVetPage() {
                     in real-time via phone or video on your mobile device or
                     computer.
                   </p>
-                  <Button variant="primary" size="md" href="/pricing">
+                  <Button variant="outline" size="md" href="/pricing">
                     Choose a plan
                     <ArrowRight className="w-4 h-4" />
                   </Button>
@@ -260,7 +260,7 @@ export default function TeleVetPage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

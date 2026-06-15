@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Serif:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -35,18 +35,15 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold rounded-lg
-      hover:bg-primary-800 transition-all duration-300 text-sm;
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-800 transition-all duration-300 text-sm;
   }
 
   .btn-accent {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-accent text-white font-semibold rounded-lg
-      hover:bg-accent-600 transition-all duration-300 text-sm;
+    @apply inline-flex items-center justify-center px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-600 transition-all duration-300 text-sm;
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg
-      hover:bg-primary hover:text-white transition-all duration-300 text-sm;
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-300 text-sm;
   }
 
   .gradient-text {
@@ -139,6 +136,7 @@ html {
 ::selection {
   background: rgba(255, 255, 255, 0.25);
 }
+
 ::-moz-selection {
   background: rgba(255, 255, 255, 0.25);
 }

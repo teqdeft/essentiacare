@@ -100,15 +100,14 @@ export default function PlatinumPrescriptionPlanPage() {
                 </h3>
 
                 <p className="text-gray-700 text-base leading-relaxed mb-4">
-                  <span className="font-bold">EssentiaCare</span> is
-                  bringing you the best possible prescription prices. As a
-                  member of EssentiaCare, there is no need to worry about
-                  the high cost of over 1,000 commonly prescribed medications.
-                  That's because as a member of EssentiaCare you get to
-                  take advantage of a $0 co-pay enhanced medication program that
-                  includes 37 ACUTE medications and 95 ACA medications, plus
-                  over 1,000 routinely prescribed chronic medications at no
-                  co-pay cost to you.
+                  <span className="font-bold">EssentiaCare</span> is bringing
+                  you the best possible prescription prices. As a member of
+                  EssentiaCare, there is no need to worry about the high cost of
+                  over 1,000 commonly prescribed medications. That's because as
+                  a member of EssentiaCare you get to take advantage of a $0
+                  co-pay enhanced medication program that includes 37 ACUTE
+                  medications and 95 ACA medications, plus over 1,000 routinely
+                  prescribed chronic medications at no co-pay cost to you.
                 </p>
 
                 <p className="text-gray-700 text-base leading-relaxed">
@@ -183,11 +182,12 @@ export default function PlatinumPrescriptionPlanPage() {
               Access Over 1,000 Medications
             </h2>
             <p className="text-white/80 text-xl leading-relaxed mb-8">
-              Join the Platinum Prescription Plan and take advantage of <br /> EssentiaCare's enhanced medication program.
+              Join the Platinum Prescription Plan and take advantage of <br />{" "}
+              EssentiaCare's enhanced medication program.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

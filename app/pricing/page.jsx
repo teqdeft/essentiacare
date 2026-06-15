@@ -44,8 +44,8 @@ export default function PricingPage() {
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">
-                EssentiaCare offers premiere services that are designed to
-                meet your medical and mental health needs. We offer{" "}
+                EssentiaCare offers premiere services that are designed to meet
+                your medical and mental health needs. We offer{" "}
                 <span className="font-bold">24/7/365 Communication</span> with
                 Licensed Physicians, Mental Health Specialists, & Licensed
                 Veterinarians in English and Spanish. The highest quality care
@@ -63,7 +63,7 @@ export default function PricingPage() {
                   <ArrowRight className="w-4 h-4" />
                 </Button>
                 <Button
-                  variant="accent"
+                  variant="primary"
                   size="lg"
                   href="https://app.essentiacare.ai/register"
                 >
@@ -103,7 +103,7 @@ export default function PricingPage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

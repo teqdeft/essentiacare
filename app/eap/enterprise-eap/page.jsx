@@ -139,7 +139,7 @@ export default function EnterpriseEAPPage() {
             <div className="max-w-3xl text-white">
               <h1 className="text-4xl md:text-5xl lg:text-[60px] font-bold leading-[1.05] tracking-tight mb-6">
                 EssentiaCare Brings Measurable{" "}
-                <span className="text-accent">Business Benefits</span>
+                <span className="text-primary">Business Benefits</span>
               </h1>
 
               <p className="text-xl md:text-xl text-white/95 font-semibold mb-2">
@@ -159,7 +159,7 @@ export default function EnterpriseEAPPage() {
                   <ArrowRight className="w-4 h-4" />
                 </Button>
                 <Button
-                  variant="accent"
+                  variant="primary"
                   size="lg"
                   href="https://app.essentiacare.ai/register"
                 >
@@ -482,7 +482,7 @@ export default function EnterpriseEAPPage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

@@ -28,7 +28,7 @@ const services = [
     image: "/images/service-behavioral.png",
     description: [
       "EssentiaCare offers comprehensive, compassionate, and accessible in-the-moment mental health care tailored to your individual needs, 24 hours/day, 365 days a year.",
-      <br/>,
+      <br />,
       "Our holistic approach gives equal importance to caring for the mind as it does to caring for the body.",
     ],
     features: [
@@ -94,7 +94,7 @@ export default function PathsToWellness() {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-75 object-cover"
                 />
                 <div
                   className={`absolute top-4 left-4 w-11 h-11 rounded-xl ${colors.iconBg} flex items-center justify-center shadow-lg backdrop-blur-sm`}

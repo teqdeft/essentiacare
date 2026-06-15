@@ -15,7 +15,6 @@ const variants = {
   ghost:
     "bg-accent text-white hover:bg-accent-600 shadow-lg shadow-accent/25 hover:shadow-accent/40",
   white: "bg-white text-primary hover:bg-gray-100 shadow-lg",
- 
 };
 
 const sizes = {

@@ -176,7 +176,7 @@ export default function Footer() {
             </div>
 
             {/* Column 4 — QR Code */}
-            <div>
+            {/* <div>
               <h3 className={headingClass}>Scan to Visit Our Website</h3>
               <div className="bg-white rounded-xl p-3 inline-block">
                 <img
@@ -184,8 +184,8 @@ export default function Footer() {
                   alt="QR code to visit essentiacare.ai"
                   className="w-36 h-36 object-contain"
                 />
-              </div>
-            </div>
+              </div> 
+             </div> */}
           </div>
         </div>
       </div>
