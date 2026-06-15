@@ -139,7 +139,7 @@ export default function PlatinumPrescriptionPlanPage() {
                   </p>
 
                   <Button
-                    variant="primary"
+                    variant="outline"
                     size="md"
                     href="/pdf/platinum-prescriptions.pdf"
                     target="_blank"

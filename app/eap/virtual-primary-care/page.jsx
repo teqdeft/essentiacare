@@ -271,7 +271,7 @@ export default function VirtualMedicalCarePage() {
               — and experience healthcare the way it should be.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="white" size="lg" href="/request-a-demo">
+              <Button variant="primary" size="lg" href="/request-a-demo">
                 Request a Demo
                 <ArrowRight className="w-4 h-4" />
               </Button>

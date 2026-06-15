@@ -91,8 +91,8 @@ export default function VirtualBehavioralHealthPage() {
               </h1>
 
               <p className="text-xl md:text-xl text-white/95 font-semibold mb-7 max-w-2xl leading-relaxed">
-                EssentiaCare Empowers Employers, Transforms Workplaces,
-                Supports Employee Well-Being and Strengthens Business Success.
+                EssentiaCare Empowers Employers, Transforms Workplaces, Supports
+                Employee Well-Being and Strengthens Business Success.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -269,7 +269,7 @@ export default function VirtualBehavioralHealthPage() {
               success with comprehensive virtual behavioral health services.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="white" size="lg" href="/request-a-demo">
+              <Button variant="primary" size="lg" href="/request-a-demo">
                 Request a Demo
                 <ArrowRight className="w-4 h-4" />
               </Button>

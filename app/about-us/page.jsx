@@ -132,7 +132,7 @@ export default function AboutUsPage() {
 
             <div className="mt-8">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

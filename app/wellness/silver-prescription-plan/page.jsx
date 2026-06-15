@@ -213,7 +213,7 @@ export default function SilverPrescriptionPlanPage() {
                   </p>
 
                   <Button
-                    variant="primary"
+                    variant="outline"
                     size="md"
                     href="/pdf/silver-prescriptions.pdf"
                     target="_blank"

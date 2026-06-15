@@ -10,7 +10,6 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import axios from "axios";
 import Link from "next/link";
 
-
 export default function MediaHubPage() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -103,7 +102,7 @@ export default function MediaHubPage() {
               affordable value.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button variant="primary" size="lg" href="/get-started">
                 Get Started <ArrowRight className="w-4 h-4" />
               </Button>
               <Button variant="white" size="lg" href="/pricing">

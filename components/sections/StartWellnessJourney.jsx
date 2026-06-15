@@ -64,7 +64,7 @@ export default function StartWellnessJourney() {
 
             <div className="flex flex-wrap gap-3">
               <Button
-                variant="accent"
+                variant="primary"
                 size="lg"
                 href="https://app.essentiacare.ai/register"
               >

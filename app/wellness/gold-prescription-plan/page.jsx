@@ -222,7 +222,7 @@ export default function GoldPrescriptionPlanPage() {
                   </p>
 
                   <Button
-                    variant="primary"
+                    variant="outline"
                     size="md"
                     href="/pdf/gold-prescriptions.pdf"
                     target="_blank"

@@ -358,7 +358,7 @@ export default function MedicalCarePage() {
                         ))}
                       </div>
                       <div>
-                        <Button variant="primary" size="lg" href={plan.href}>
+                        <Button variant="outline" size="lg" href={plan.href}>
                           Choose plan
                           <ArrowRight className="w-4 h-4" />
                         </Button>
