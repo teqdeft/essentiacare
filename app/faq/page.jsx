@@ -16,7 +16,7 @@ export default function FAQPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden h-[440px] md:h-[500px]">
+        <section className="relative overflow-hidden h-[620px] md:h-[500px]">
           <div
             className="absolute inset-0 z-[0] "
             style={{

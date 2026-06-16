@@ -25,7 +25,7 @@ export default function SpeakToATherapistPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden h-[480px] md:h-[540px]">
+        <section className="relative overflow-hidden h-[520px] md:h-[600px]">
           <div
             className="absolute inset-0 z-[0] "
             style={{
@@ -46,7 +46,7 @@ export default function SpeakToATherapistPage() {
             Home
           </Link>
 
-          <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-end pb-14 md:pb-16">
+          <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-end pb-10 md:pb-12">
             <div className="max-w-3xl text-white">
               <h1
                 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6"

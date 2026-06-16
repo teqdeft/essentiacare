@@ -22,7 +22,7 @@ export default function ContactUsPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden h-[500px] md:h-[560px]">
+        <section className="relative overflow-hidden h-[640px] md:h-[620px]">
           <div
             className="absolute inset-0 z-[0] "
             style={{
@@ -44,12 +44,12 @@ export default function ContactUsPage() {
           </Link>
 
           <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center">
-            <div className="max-w-2xl text-white">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6">
+            <div className="max-w-3xl text-white">
+              <h1 className="text-3xl  md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6">
                 Contact Us
               </h1>
 
-              <p className="text-lg md:text-xl text-white/95 font-medium leading-relaxed mb-8 max-w-2xl">
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">
                 EssentiaCare offers premiere services that are designed to meet
                 your medical and mental health needs. Communication with a host
                 of specialists, including Licensed Physicians, Licensed Mental

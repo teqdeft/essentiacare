@@ -16,7 +16,7 @@ export default function PricingPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden h-[420px] md:h-[480px]">
+        <section className="relative overflow-hidden h-[540px] md:h-[620px]">
           <div
             className="absolute inset-0 z-[0] "
             style={{
