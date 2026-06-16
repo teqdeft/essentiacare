@@ -16,6 +16,7 @@ const quickLinks = [
   { label: "Refund Policy", href: "/refund-policy" },
   { label: "Terms & Conditions", href: "/terms-conditions" },
   { label: "Insurance Disclaimer", href: "/insurance-disclaimer" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 const certifications = [

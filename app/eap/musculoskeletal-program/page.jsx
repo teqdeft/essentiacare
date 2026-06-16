@@ -26,7 +26,7 @@ export default function IntegratedMusculoskeletalCarePage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden h-[540px] md:h-[560px]">
+        <section className="relative overflow-hidden h-[600px] md:h-[560px]">
           <div
             className="absolute inset-0 z-[0] "
             style={{
@@ -49,7 +49,7 @@ export default function IntegratedMusculoskeletalCarePage() {
 
           <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center">
             <div className="max-w-3xl text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-[60px] font-bold leading-[1.05] tracking-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-[60px] font-bold leading-[1.05] tracking-tight mb-6 mt-5">
                 Integrated <br className="hidden md:block" />
                 Musculoskeletal Care
               </h1>

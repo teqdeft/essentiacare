@@ -8,10 +8,8 @@ import { cn } from "@/lib/utils";
 import GoogleTranslate from "../ui/GoogleTranslate";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about-us" },
   {
-    label: "Medical Care",
+    label: "Medical",
     children: [
       { label: "Medical Care Services", href: "/wellness/medical-care" },
       { label: "Speak To A Doctor", href: "/wellness/speak-to-a-doctor" },
@@ -31,7 +29,7 @@ const navLinks = [
     ],
   },
   {
-    label: "Counseling Care",
+    label: "Counseling",
     children: [
       {
         label: "Counseling Care Services",
@@ -44,7 +42,7 @@ const navLinks = [
     ],
   },
   {
-    label: "TeleVet Pet Care",
+    label: "TeleVet Pet",
     children: [
       { label: "Televet Pet Care", href: "/televet-pet-care" },
       {
@@ -68,16 +66,23 @@ const navLinks = [
       },
     ],
   },
-  { label: "FAQ", href: "/faq" },
-  { label: "Media Hub", href: "/media-hub" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Contact", href: "/contact" },
-  { label: "Request a Demo", href: "/request-a-demo" },
+  {
+    label: "About Us",
+    href: "/about-us",
+  },
+  {
+    label: "Media Hub",
+    href: "/media-hub",
+  },
+
+  { label: "Join the Community", href: "/join-the-mission" },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [showAnnouncement, setShowAnnouncement] = useState(true);
 
   const toggleSubmenu = (label) => {
     setOpenSubmenu(openSubmenu === label ? null : label);
@@ -90,8 +95,45 @@ export default function Navbar() {
 
   return (
     <header className="w-full z-50 sticky top-0">
+      {/* Announcement Bar */}
+      {showAnnouncement && (
+        <div
+          className="announcement-bar text-white text-xs sm:text-sm py-1.5 section-padding relative"
+          style={{
+            background:
+              "linear-gradient(90deg, #3d2a4f 0%, #604376 50%, #3d2a4f 100%)",
+          }}
+        >
+          <div className="container-main flex items-center justify-center gap-3 pr-8">
+            <p className="text-center leading-snug">
+              Confidential virtual care | Medical, Behavioral | TeleVet support
+              — for individuals, families, and employees.{" "}
+              <Link
+                href="/request-a-demo"
+                className="font-semibold underline underline-offset-2 hover:text-white/80 transition-colors ml-1"
+              >
+                Request a demo →
+              </Link>
+            </p>
+            <button
+              type="button"
+              onClick={() => setShowAnnouncement(false)}
+              className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 p-1 hover:bg-white/10 rounded-md transition-colors"
+              aria-label="Close announcement"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Main Nav */}
-      <nav className="section-padding" style={{ background: "#6d4f85" }}>
+      <nav
+        className="section-padding"
+        style={{
+          background: "linear-gradient(135deg, #604376 0%, #AC73B9 100%)",
+        }}
+      >
         {/* TOP ROW: Logo (left) + CTAs (right) */}
         <div className="container-main flex items-center justify-between h-20 gap-4">
           {/* Logo */}
@@ -101,21 +143,35 @@ export default function Navbar() {
             aria-label="Home"
           >
             <img
-              src="/images/essentiacare-white-logo-v1.png"
-              alt="EssentiaCare"
+              src="/images/essentiacare-white-logo-v2.png"
+              alt="iWILL 'til i'mWELL"
               className="h-16 w-auto"
             />
           </Link>
 
-          {/* Language Selector */}
-          <div className="hidden lg:flex items-center gap-2 shrink-0">
+          {/* CTA Buttons */}
+          <div className="hidden xl:flex items-center gap-2 shrink-0">
+            <Button
+              variant="white"
+              size="sm"
+              href="https://app.essentiacare.ai/login"
+            >
+              Login
+            </Button>
+            <Button
+              variant="primary"
+              size="sm"
+              href="https://app.essentiacare.ai/register"
+            >
+              Get Started
+            </Button>
             <GoogleTranslate />
           </div>
 
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
+            className="xl:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
             aria-label="Toggle menu"
           >
             {mobileOpen ? (
@@ -127,14 +183,14 @@ export default function Navbar() {
         </div>
 
         {/* BOTTOM ROW: Page Links */}
-        <div className="hidden lg:block border-t border-white/15">
-          <div className="container-main flex items-center justify-start gap-0.5 xl:gap-1 py-2">
+        <div className="hidden xl:block border-t border-white/15">
+          <div className="container-main flex items-center justify-center gap-1 py-2">
             {navLinks.map((link) => (
               <div key={link.label} className="relative group">
                 {link.children ? (
                   <button
                     type="button"
-                    className="flex items-center gap-1 px-1.5 xl:px-3 py-2.5 text-[13px] xl:text-sm font-medium text-white/95 hover:text-white rounded-lg hover:bg-white/15 transition-all whitespace-nowrap"
+                    className="flex items-center gap-1 px-3 py-2.5 text-sm font-medium text-white/95 hover:text-white rounded-lg hover:bg-white/15 transition-all whitespace-nowrap"
                     aria-haspopup="true"
                   >
                     {link.label}
@@ -143,7 +199,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={link.href}
-                    className="flex items-center gap-1 px-1.5 xl:px-3 py-2.5 text-[13px] xl:text-sm font-medium text-white/95 hover:text-white rounded-lg hover:bg-white/15 transition-all whitespace-nowrap"
+                    className="flex items-center gap-1 px-3 py-2.5 text-sm font-medium text-white/95 hover:text-white rounded-lg hover:bg-white/15 transition-all whitespace-nowrap"
                   >
                     {link.label}
                   </Link>
@@ -172,7 +228,7 @@ export default function Navbar() {
         {/* Mobile Nav */}
         <div
           className={cn(
-            "lg:hidden overflow-hidden transition-all duration-300",
+            "xl:hidden overflow-hidden transition-all duration-300",
             mobileOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0",
           )}
         >
@@ -232,7 +288,7 @@ export default function Navbar() {
               <Button
                 variant="accent"
                 className="w-full"
-                href="https://app.essentiacare.ai/register"
+                href="https://app.iwilltilimwell.com/register"
               >
                 Get Started
               </Button>

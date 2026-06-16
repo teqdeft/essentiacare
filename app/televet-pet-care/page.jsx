@@ -39,7 +39,7 @@ export default function TeleVetPage() {
 
           <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center">
             <div className="max-w-2xl text-white">
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6 mt-6 ">
                 TeleVet
               </h1>
 

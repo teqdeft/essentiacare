@@ -49,7 +49,7 @@ export default function SpeakToAVeterinarianPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden h-[500px] md:h-[580px]">
+        <section className="relative overflow-hidden h-[540px] md:h-[580px]">
           <div
             className="absolute inset-0 z-[0] "
             style={{
@@ -73,7 +73,7 @@ export default function SpeakToAVeterinarianPage() {
           <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center items-center text-center">
             <div className="max-w-3xl text-white">
               <h1
-                className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6"
+                className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6 mt-6"
                 style={{ fontFamily: "serif" }}
               >
                 TeleVet Pet Health Care

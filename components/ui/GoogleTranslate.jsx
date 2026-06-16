@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { Check } from "lucide-react";
+import { Languages, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const languages = [
@@ -30,7 +30,7 @@ export default function GoogleTranslate() {
           layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
           autoDisplay: false,
         },
-        "google_translate_element"
+        "google_translate_element",
       );
       setIsLoaded(true);
     };
@@ -95,17 +95,16 @@ export default function GoogleTranslate() {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center justify-between gap-3 min-w-[150px] px-4 py-2 rounded-md bg-white/5 hover:bg-white/15 border border-white/40 text-white text-sm font-medium transition-all duration-200"
+          className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white text-sm font-semibold transition-all duration-200"
           aria-label="Change language"
           aria-expanded={isOpen}
         >
-          <span>
-            {currentLang === "en" ? "Select Language" : current.label}
-          </span>
+          <Languages className="w-4 h-4" />
+          <span>{current.short}</span>
           <svg
             className={cn(
               "w-3 h-3 transition-transform duration-200",
-              isOpen && "rotate-180"
+              isOpen && "rotate-180",
             )}
             fill="none"
             stroke="currentColor"
@@ -132,7 +131,7 @@ export default function GoogleTranslate() {
                   "w-full flex items-center justify-between px-4 py-2.5 text-sm font-medium transition-colors",
                   currentLang === lang.code
                     ? "text-primary bg-primary-50"
-                    : "text-gray-700 hover:text-primary hover:bg-primary-50"
+                    : "text-gray-700 hover:text-primary hover:bg-primary-50",
                 )}
               >
                 <span className="flex items-center gap-2.5">

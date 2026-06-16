@@ -25,7 +25,7 @@ export default function SpeakToATherapistPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden h-[520px] md:h-[600px]">
+        <section className="relative overflow-hidden h-[600px] md:h-[540px]">
           <div
             className="absolute inset-0 z-[0] "
             style={{
